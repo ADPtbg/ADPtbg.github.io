@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ADP - Administrador de Parcelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #263238;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #263238;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .contact-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .mapa {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #263238;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            flex: 0 0 24%;
+        }
+
+        h2 {
+            color: #263238;
+        }
+
+        .video-container {
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+        .comments {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .comment {
+            border: 1px solid #eee;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment p {
+            font-size: 16px;
+        }
+
+        /* Estilos para el formulario de comentarios */
+        #comment-form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #826a9f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1e6e91;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ADP - Administrador de Parcelas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#muestra">Muestra</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#comments">Comentarios</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="inicio">
+        <h2>Bienvenido al Administrador de Parcelas</h2>
+        <p>El Administrador de Parcelas, desarrollado por Tomás Bertin desde 2022, es una herramienta informática (Software) que ayuda a los trabajadores rurales a organizar y gestionar la información de sus parcelas, ganado y pastura de manera efectiva.</p>
+        <p>Lo nombrado anteriormente se logra a través de un software programado en Microsoft Visual Basic en lenguaje de programación Java .NET, también con una buena bases de datos MySql y phpMyAdmin, que esta es una herramienta que tiene como intención manejar la administración de MySql a través de páginas web, utilizando un navegador (Google Chrome, Mozilla, etc...), y para iniciar todos estos servicios se utilizó WAMPSERVER el cual consta con: Servidor Web Apache, OpenSSL, MySql y lenguaje de programación PHP</p>
+        <div class="image-container">
+        <img class="fadeIn" src="Microsoft_Visual_Studio_2010_Logo.PNG" alt="" width="300" height="200">
+        <img class="fadeIn" src="mysql-logo.png" alt="" width="300" height="200">
+        <img class="fadeIn" src="PhpMyAdmin_logo_2010_hidef.png" alt="" width="300" height="200">
+        <img class="fadeIn" src="697847ca00eef7069db9aef07c602389.png" alt="" width="300" height="200">
+        </div>
+    </div>
+
+    <div class="container" id="caracteristicas">
+        <h2>Características del software</h2>
+        <ul>
+            <li>Gestión de información de parcelas</li>
+            <li>Registro de datos de ganado</li>
+            <li>Seguimiento de la calidad de pastura</li>
+            <li>Almacenamiento de datos en una base de datos MySQL</li>
+        </ul>
+        <p>Este software proporciona una solución integral para mejorar la organización en el campo y facilitar la toma de decisiones informadas.</p>
+    </div>
+
+    <div class="container" id="muestra">
+        <h2>Muestra</h2>
+        <div class="video-container">
+            <video width="480" height="270" controls>
+                <source src="VIDEO ADP.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+    </div>
+
+    <div class="container" id="ubicacion">
+        <h2>Nuestra Ubicación</h2>
+        <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d842.5565216219845!2d-57.2010685503037!3d-32.359480026454925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95af4130c0e68797%3A0x54901717b10553b5!2sEmpresa%20ADP!5e0!3m2!1ses-419!2suy!4v1698722049596!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="container contact-section" id="contacto">
+        <h2>Contacto</h2>
+        <p>Para ponerse en contacto con nosotros, puede enviar un correo electrónico a: <a href="mailto:tomibg.05@gmail.com">tomibg.05@gmail.com</a>.</p>
+        <p>También puede llamar al número de celular: +598 92 665 890.</p>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll(".fadeIn");
+        let index = 0;
+
+        function showImage() {
+            if (index < images.length) {
+                images[index].style.display = "block";
+                index++;
+            }
+        }
+
+        // Mostrar las imágenes una por una con un retraso de 500 ms
+        setInterval(showImage, 500);
+    </script>
+
+<div class="comments" id="comments">
+    <h2>Comentarios</h2>
+    <div class="comment">
+        <p><strong>Ivar Fernandez:</strong> Excelente página.</p>
+    </div>
+    <div class="comment">
+        <p><strong>Augustos Rios:</strong> Me gusta el diseño.</p>
+    </div>
+</div>
+
+<div id="comment-form">
+    <h2>Deja tu comentario</h2>
+    <form id="add-comment-form">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" required>
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" required></textarea>
+        <button type="submit">Publicar comentario</button>
+    </form>
+</div>
+
+<script>
+    // Función para agregar un nuevo comentario
+    function addComment(username, comment) {
+        const commentsContainer = document.getElementById("comments");
+        const newComment = document.createElement("div");
+        newComment.classList.add("comment");
+        newComment.innerHTML = `<p><strong>${username}:</strong> ${comment}</p>`;
+        commentsContainer.appendChild(newComment);
+    }
+
+    // Manejo del formulario de comentarios
+    const commentForm = document.getElementById("add-comment-form");
+    commentForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const usernameInput = document.getElementById("username");
+        const commentInput = document.getElementById("comment");
+        const username = usernameInput.value;
+        const comment = commentInput.value;
+        addComment(username, comment);
+        usernameInput.value = "";
+        commentInput.value = "";
+    });
+</script>
+
+<footer>
+    &copy; 2023 ADP - Administrador de Parcelas
+</footer>
+
+</body>
+</html>
